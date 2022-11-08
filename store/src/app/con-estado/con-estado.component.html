@@ -1,0 +1,32 @@
+<div class="container">
+  <section class="section">
+    <h1>Products</h1>
+    <div class="columns">
+      <div class="column" *ngFor="let item of modeloTienda.tiendaItems">
+        <div class="is-one-quarter">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="assets/products/{{item.imagen}}" alt="">
+              </figure>
+            </div>
+            <div class="card-contend">
+              <strong>{{item.titulo}}</strong>
+              <br>
+              <p>{{item.texto}}</p>
+              <button (click)="Seleccionar(item)" class="button is-fullwidth is-small is-dange">
+                  COMPRAR POR ${{item.precio}}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <li *ngFor="let items of itemsComprados" >
+      {{items.titulo}}
+    </li>
+  </section>
+</div>
