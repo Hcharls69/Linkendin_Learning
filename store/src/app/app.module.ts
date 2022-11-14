@@ -4,11 +4,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ConEstadoComponent } from './con-estado/con-estado.component';
+import { SinEstadoComponent } from './sin-estado/sin-estado.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ConEstadoComponent
+    ConEstadoComponent,
+    SinEstadoComponent
   ],
   imports: [
     BrowserModule,

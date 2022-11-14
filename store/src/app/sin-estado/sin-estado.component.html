@@ -1,0 +1,21 @@
+<div class="is-one-quarter">
+  <div class="card">
+    <div class="card-image">
+      <figure class="image is-4by3">
+        <img src="assets/products/{{producto.imagen}}" alt="">
+      </figure>
+    </div>
+    <div class="card-contend">
+      <strong>{{producto.titulo}}</strong>
+      <br>
+      <p>{{producto.texto}}</p>
+      <button (click)="seleccionarItem()"
+      [disabled]="deshabilitarBoton()"
+      class="button is-fullwidth is-small"
+      [ngClass]="{'is-danger': !deshabilitarBoton()}"
+      >
+          {{accionComprar}}
+      </button>
+    </div>
+  </div>
+</div>

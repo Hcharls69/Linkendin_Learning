@@ -23,4 +23,8 @@ export class ConEstadoComponent implements OnInit {
     this.itemsComprados.push(item);
   }
 
+  productoS(_evento: any){
+    console.log(_evento);
+  }
+
 }
